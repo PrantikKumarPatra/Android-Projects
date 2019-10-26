@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#C8E6C9"
+    tools:context=".StudentDetail">
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="30dp"
+        android:text="Name :-"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#004D40"
+        android:textSize="25sp" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginStart="2dp"
+        android:layout_marginLeft="2dp"
+        android:layout_marginTop="81dp"
+        android:text="Email :-"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#004D40"
+        android:textSize="25sp" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView2"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="101dp"
+        android:text="Age :-"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#004D40"
+        android:textSize="25sp" />
+
+    <EditText
+        android:id="@+id/editTextName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/textView2"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_toRightOf="@+id/textView"
+        android:ems="10"
+        android:hint="Enter Name here"
+        android:inputType="textPersonName"
+        android:textColor="#212121"
+        android:textColorHint="#5C6BC0"
+        android:textSize="18sp"
+        android:textStyle="italic" />
+
+    <EditText
+        android:id="@+id/editTextEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/textView3"
+        android:layout_alignEnd="@+id/editTextName"
+        android:layout_alignRight="@+id/editTextName"
+        android:layout_toRightOf="@+id/textView"
+        android:ems="10"
+        android:hint="Enter  email id"
+        android:inputType="textEmailAddress"
+        android:textColor="#212121"
+        android:textColorHint="#5C6BC0"
+        android:textSize="18sp"
+        android:textStyle="italic" />
+
+    <EditText
+        android:id="@+id/editTextAge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/editTextEmail"
+        android:layout_alignLeft="@+id/editTextEmail"
+        android:layout_alignEnd="@+id/editTextEmail"
+        android:layout_alignRight="@+id/editTextEmail"
+        android:layout_alignBottom="@+id/textView3"
+        android:layout_marginStart="-7dp"
+        android:layout_marginLeft="-7dp"
+        android:layout_marginEnd="7dp"
+        android:layout_marginRight="7dp"
+        android:layout_marginBottom="-2dp"
+        android:ems="10"
+        android:hint="Enter Age here"
+        android:inputType="number"
+        android:textColor="#212121"
+        android:textColorHint="#5C6BC0"
+        android:textStyle="italic" />
+
+    <Button
+        android:id="@+id/btnSave"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="30dp"
+        android:layout_marginBottom="70dp"
+        android:layout_toLeftOf="@+id/btnClose"
+        android:background="#1B5E20"
+        android:text="Save"
+        android:textColor="#F5F5F5"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/btnClose"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="21dp"
+        android:layout_marginRight="21dp"
+        android:layout_marginBottom="71dp"
+        android:background="#1B5E20"
+        android:text="Close"
+        android:textColor="#F5F5F5"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/btnDelete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/btnSave"
+        android:layout_marginTop="0dp"
+        android:layout_marginRight="41dp"
+        android:layout_toLeftOf="@+id/btnSave"
+        android:background="#1B5E20"
+        android:text="Delete"
+        android:textColor="#F5F5F5"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+
+</RelativeLayout>
